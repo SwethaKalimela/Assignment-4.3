@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div.c1 {                      					
+    position : relative;
+    top: 50px;
+    left: 50px;
+    background : green;
+    width : 100px;
+    height : 100px;       						/*c1 with 100*100 square box*/    
+}
+
+div.c2 {		                                                                                               /* C2 Child of c1 with postion property being absolute*/					
+  
+    position : absolute;              
+    top : 40px;
+    left : 30px;
+
+      
+}
+ 
+
+
+div.c1:hover {						
+	background-color: orange;   					/*While hovering on the c1 Div element, the shape transitions to circle with orange background every 5s*/                                                       
+	-webkit-border-radius: 50px;                                                                     /*First define the properties which you wish to change*/
+	-webkit-transition: border-radius 5s, background-color 5s;                          /*Defining transition propert for 5s on both properties*/
+}
+</style>
+</head>
+<body>
+ <div class="c1">
+   <div class="c2">BOX
+  </div>
+ </div>
+
+</body>
+</html>
